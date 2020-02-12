@@ -8,10 +8,10 @@ class ImageList extends Component {
         const imageList = images.map((item , index) => {
             return <ImageItem image={item} key={index}/>
         })
-        console.log(imageList.length)
         return (
-            <ul className="horned-creatures">
+            <ul>
                 {imageList}
+
             </ul>
         )
     }

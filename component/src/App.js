@@ -24,8 +24,7 @@ export default class App extends Component {
     const keywords = allImages.map((item) => {
       return <option value ={item.keyword}>{item.keyword}</option>
     })
-    // const uniqueKeyWords = [...new Set(keywords)];
-
+  
     return (
       <div className="App">
         <Header />
@@ -40,6 +39,7 @@ export default class App extends Component {
           </section>
           <section>
             <ImageList images={filteredImages} />
+
           </section>
         </main>
       </div>
